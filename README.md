@@ -54,10 +54,13 @@ pip install -r requirements.txt
 ## API Key Setup
 
 OpenAI API key is used. You can directly run the app in my link.
-Or if u want to implemment with your API key store it in streamlit secrets.
+
+https://decodelabs-skill-job-suggestion-chatbotproject3-jex3tmfpwawutc.streamlit.app/
+
 
 ## Run the Application
-
+you can run the application using the command below but before that u need to adjust the API key settings.
+Either store it in stream lit secrets and run or embed it directly on the code.
 ```bash
 streamlit run app.py
 ```
