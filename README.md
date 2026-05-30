@@ -33,17 +33,19 @@ The system recommends suitable job roles based on user-provided skills and certi
 The chatbot uses a CSV file:
 it-jobs.csv
 Dataset Columns:
-It is worth mentioning that dataset was preprocessed and basing on the clusters of Skills and certifications 15 clusters were identified and two new groups naming 
+It is worth mentioning that dataset was preprocessed and basing on the clusters of Skills and certifications 15 clusters were identified using KMEANS clustering and two new groups were formed naming:
 
-category_group_name (Skills)
+category_group_name (Skills);
 certificate_group_name (Certificates)
-were formed
 
-KMeans clustering was applied.
 
-Job Title
-category_group_name (Skills)
+
+The it_jobs.csv had
+Job Title;
+Job Description;
+category_group_name (Skills);
 certificate_group_name (Certificates)
+
 ⚙️ Installation
 
 Install required libraries:
@@ -51,6 +53,8 @@ Install required libraries:
 pip install -r requirements.txt
 🔑 API Key Setup
 
+
+Running the app:
 you directly run it on: https://decodelabs-skill-job-suggestion-chatbotproject3-jex3tmfpwawutc.streamlit.app/
 
 **This below is only if u want to run it using your API key**
@@ -93,9 +97,9 @@ project/
 ├── it-jobs.csv
 ├── requirements.txt
 ├── README.md
-│
-└── .streamlit/
-    └── secrets.toml
+
+
+
 📈 Future Improvements
 Add resume upload (PDF parsing)
 Improve ranking using weighted skill matching
