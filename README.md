@@ -31,8 +31,6 @@ The system recommends suitable job roles based on user-provided skills and certi
 ## 📊 Dataset
 
 The chatbot uses a CSV file:
-
-```text
 it-jobs.csv
 Dataset Columns:
 It is worth mentioning that dataset was preprocessed and basing on the clusters of Skills and certifications 15 clusters were identified and two new groups naming 
@@ -53,7 +51,9 @@ Install required libraries:
 pip install -r requirements.txt
 🔑 API Key Setup
 
+you directly run it on: https://decodelabs-skill-job-suggestion-chatbotproject3-jex3tmfpwawutc.streamlit.app/
 
+**This below is only if u want to run it using your API key**
 # Add your OpenAI API key here
 # Example: api_key = "YOUR_OPENAI_API_KEY"
 replace this:
