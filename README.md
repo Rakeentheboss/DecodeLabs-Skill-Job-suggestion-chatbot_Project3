@@ -15,6 +15,15 @@ The system recommends suitable job roles based on user-provided skills and certi
 - Simple and interactive Streamlit interface
 
 ---
+## DEVELOPMENT
+
+In this project at first the gpt-4.0 mini model of Open AI was obtained as this will be used as LLM. Now we obtain the dataset, preprocess it later on we implement **KMEANS** clustering so that 15 unique clusters of skills can be figured out.
+The final dataset became
+Job Title	    Job Description	   category_group_name	    certificate_group_name
+
+Now the category_group_name is basically the skill name. The category_group and certificate group are combined and their embeddings are generated using ALL-MINI-LM-V2-L6. When user gives input his/her input is also embedded in the same way. Then this is compared with the embeddings of the combined category_group and certificate_group using cosine similarity.  The title[i] retrieved has obtained the closest value to one. Finally, this title and combined category is fed to the LLM and a prompt is configured so that it can tell about the job and its description.
+
+
 
 ## 🧠 Technologies Used
 
