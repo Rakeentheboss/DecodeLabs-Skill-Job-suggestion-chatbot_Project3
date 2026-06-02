@@ -57,6 +57,22 @@ pip install -r requirements.txt
 Running the app:
 you directly run it on: https://decodelabs-skill-job-suggestion-chatbotproject3-jex3tmfpwawutc.streamlit.app/
 
+
+## System Architecture
+
+User Input (Skills + Certificates)
+        ↓
+Sentence Transformer Embedding
+        ↓
+Cosine Similarity Search
+        ↓
+Top Matching Job Profiles
+        ↓
+GPT-4o-mini Recommendation Generator
+        ↓
+Final Career Suggestion
+
+
 # This below is only if u want to run it using your API key
 
 Add your OpenAI API key here
