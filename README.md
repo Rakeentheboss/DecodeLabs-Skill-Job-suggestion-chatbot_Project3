@@ -1,4 +1,4 @@
- 💼 Job Skill Matching Chatbot
+ ## Job Skill Matching Chatbot
 
 This project is an AI-powered **Job Skill Matching Chatbot** built using Python, Streamlit, Sentence Transformers, and OpenAI.
 
@@ -6,7 +6,7 @@ The system recommends suitable job roles based on user-provided skills and certi
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Semantic job matching using Sentence Transformers
 - Skill + certificate-based recommendation system
@@ -25,7 +25,7 @@ Now the category_group_name is basically the skill name. The category_group and 
 
 
 
-## 🧠 Technologies Used
+##  Technologies Used
 
 - Python
 - Streamlit
@@ -37,7 +37,7 @@ Now the category_group_name is basically the skill name. The category_group and 
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The chatbot uses a CSV file:
 it-jobs.csv
@@ -60,7 +60,7 @@ certificate_group_name (Certificates)
 Install required libraries:
 
 pip install -r requirements.txt
-🔑 API Key Setup
+ API Key Setup
 
 
 Running the app:
@@ -100,12 +100,12 @@ client = OpenAI(api_key=api_key)
 Add:
 
 OPENAI_API_KEY = "your_api_key_here"
-▶️ Run the Application
+## Run the Application
 streamlit run app.py
 
 you can also directly run it on: https://decodelabs-skill-job-suggestion-chatbotproject3-jex3tmfpwawutc.streamlit.app/
 
-🧩 How It Works
+## How It Works
 User enters skills and certificates
 Input is converted into embeddings
 Cosine similarity finds the most relevant job matches
@@ -116,7 +116,7 @@ Embedding Model:
 all-MiniLM-L6-v2
 LLM Model:
 gpt-4o-mini
-📁 Project Structure
+## Project Structure
 project/
 │
 ├── app.py
